@@ -1,10 +1,14 @@
-# csvglance
+<p align="center">
+  <img src="assets/banner.webp" alt="csvglance" width="100%">
+</p>
 
-[![CI](https://github.com/celaldrg/csvglance/actions/workflows/ci.yml/badge.svg)](https://github.com/celaldrg/csvglance/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/celaldrg/csvglance?sort=semver)](https://github.com/celaldrg/csvglance/releases)
-![Go](https://img.shields.io/badge/go-1.24%2B-00ADD8)
-![No dependencies](https://img.shields.io/badge/dependencies-stdlib%20only-brightgreen)
+<p align="center">
+  <a href="https://github.com/celaldrg/csvglance/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/celaldrg/csvglance/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="https://github.com/celaldrg/csvglance/releases"><img alt="Release" src="https://img.shields.io/github/v/release/celaldrg/csvglance?sort=semver"></a>
+  <img alt="Go" src="https://img.shields.io/badge/go-1.24%2B-00ADD8">
+  <img alt="No dependencies" src="https://img.shields.io/badge/dependencies-stdlib%20only-brightgreen">
+</p>
 
 **Know a CSV file before you load it.** `csvglance` reads a CSV in one streaming pass and tells you, for every column,
 the **type**, how much is **missing**, how many **distinct** values there are, the **range**, the **mean** and the
@@ -14,7 +18,17 @@ empty columns.
 A single static binary. It detects the delimiter (`,` `;` tab `|`), handles gzip, UTF-8 BOM and decimal commas,
 and spreads the work across CPU cores. A million rows takes about a second.
 
+<p align="center">
+  <img src="assets/terminal-demo.webp" alt="csvglance, real terminal output" width="860">
+  <br><sub>Real output: <code>csvglance examples/siparisler.csv</code></sub>
+</p>
+
 ## Example
+
+<p align="center">
+  <img src="assets/demo.gif" alt="csvglance running in a terminal" width="860">
+  <br><sub>Recorded with <a href="https://github.com/charmbracelet/vhs">vhs</a>.</sub>
+</p>
 
 Real output on the [OurAirports airport-codes dataset](https://github.com/datasets/airport-codes) (`data/airport-codes.csv`, commit `0a775c0`):
 
